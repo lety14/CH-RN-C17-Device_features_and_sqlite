@@ -1,0 +1,46 @@
+{
+  "name": "c16-device-features",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "eslint --ext .js,.jsx src",
+    "lint:fix": "eslint --ext .js,.jsx src --fix",
+    "prettier": "npx prettier --write 'src/**/*.{js,jsx}' --check",
+    "prettier:fix": "npm run prettier -- --write",
+    "format": "npm run lint:fix && npm run prettier:fix"
+  },
+  "dependencies": {
+    "@react-navigation/native": "^6.0.12",
+    "@react-navigation/native-stack": "^6.8.0",
+    "@reduxjs/toolkit": "^1.8.5",
+    "expo": "~46.0.9",
+    "expo-file-system": "~14.1.0",
+    "expo-image-picker": "~13.3.1",
+    "expo-location": "~14.3.0",
+    "expo-permissions": "~13.2.0",
+    "expo-sqlite": "^10.3.0",
+    "expo-status-bar": "~1.4.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-native": "0.69.5",
+    "react-native-maps": "0.31.1",
+    "react-native-web": "~0.18.7",
+    "react-redux": "^8.0.2",
+    "redux-thunk": "^2.4.1",
+    "expo-location": "~14.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@types/react": "~18.0.14",
+    "@types/react-native": "~0.69.1",
+    "typescript": "~4.3.5"
+  },
+  "eslintConfig": {
+    "extends": "universe/native"
+  },
+  "private": true
+}
